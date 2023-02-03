@@ -1,0 +1,11 @@
+# gitignore
+
+! setlists/*.pdf
+*.pdf
+*.aux
+*.log
+*.out
+*.gz
+*.toc
+*.lof
+*.lot

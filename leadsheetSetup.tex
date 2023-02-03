@@ -1,0 +1,46 @@
+% leadsheet setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+
+\usepackage[a4paper,
+textwidth = 16.5cm,
+textheight = 25cm,
+inner = 2.5cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Leadsheet}
+
+\begin{document}
+	\input{leadsheets/jesus-messiah}
+\end{document}

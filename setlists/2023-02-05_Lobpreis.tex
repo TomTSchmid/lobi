@@ -4,13 +4,6 @@
 
 \usepackage{ngerman}            %Neue Rechtschreibung
 \usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
-\usepackage{fancyhdr}           %Kopf-und Fusszeilen
-
-%\usepackage[automark]{scrlayer-scrpage}
-%\ihead{Gottesdienst}
-%\chead{XX. Monat 2023}
-%\ohead{LP-Leiter}
-%\ofoot[]{}
 
 \usepackage{ulem}
 \usepackage[dvipsnames]{xcolor}
@@ -41,39 +34,15 @@ citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
 
 \renewcommand{\familydefault}{\sfdefault}
 
-%	Einstellung der Kopf- und Fußzeilen
-%
-%\pagestyle{fancyplain}
-%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-%\lhead[\fancyplain{}{\sl\thepage}]{\fancyplain{}{\sl\rightmark}}
-%\rhead[\fancyplain{}{\sl\leftmark}]{\fancyplain{}{\sl\thepage}}
-%\lfoot{}
-%\cfoot{}
-%\rfoot{}
-
 \lhead{Gottesdienst}
 \chead{XX. Monat 2023}
 \rhead{LP-Leiter}
 
-\setlength{\parindent}{0cm}
-
-\newcommand{\cmark}{\ding{51}}%
-\newcommand{\xmark}{\ding{55}}%
-
-%\newcommand{myRow}{\textbf{\textcolor{white}{}}}
-%\newenvironment{Zeug}{\color{magenta}}{\color{black}}
 \newenvironment{myRow}{\color{white}\textbf}{}
 
 \title{Lobi\_Setlist}
 
 \begin{document}
-	
-	%\pdfbookmark{Masterarbeit\_Schmid,Tom}{Masterarbeit\_Schmid,Tom}
-	%\maketitle
-	
-	%\input{einleitung}
-	
 %	Gottesdienst - XX. Monat 2023 - LP-Leiter
 	
 	\begin{tabular}{cl|c}
@@ -103,4 +72,3 @@ citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
 		& & \\
 	\end{tabular}
 \end{document}
-

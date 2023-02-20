@@ -34,9 +34,9 @@ citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
 
 \renewcommand{\familydefault}{\sfdefault}
 
-\lhead{Gottesdienst}
-\chead{XX. Monat 2023}
-\rhead{LP-Leiter}
+%\lhead{Gottesdienst}
+%\chead{XX. Monat 2023}
+%\rhead{LP-Leiter}
 
 \newenvironment{myRow}{\color{white}\textbf}{}
 
@@ -44,31 +44,35 @@ citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
 
 \begin{document}
 %	Gottesdienst - XX. Monat 2023 - LP-Leiter
+	\pagestyle{myheadings}
+	\markright{Gottesdienst - 05. Februar 2023 - Papa}
 	
-	\begin{tabular}{cl|c}
-		\rowcolor{cyan} \myRow{1} & \myRow{Du großer Gott} & \myRow{130} \\
-		 & & \\
-		\rowcolor{cyan} \myRow{2} & \myRow{I Give you Glory} & \myRow{140} \\
+	\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+		\rowcolor{cyan} \myRow{1} & \myRow{Du großer Gott}                 & \myRow{130} \\
+		& 4 Verse, bei Strophe 3 bissle runterkommen & \\
 		& & \\
-		\rowcolor{cyan} \myRow{3} & \myRow{Jesus sei du meine erste Liebe} & \myRow{136} \\
+		\rowcolor{cyan} \myRow{2} & \myRow{Jesus sei du meine erste Liebe} & \myRow{132} \\
 		& & \\
-		\rowcolor{cyan} \myRow{4} & \myRow{Jesus, Herr, ich denke an dein Opfer} & \myRow{} \\
+		& direkter Übergang in (3): 2 Takte & \\
+		\rowcolor{cyan} \myRow{3} & \myRow{I Give you Glory}               & \myRow{140} \\
+		& Anfang mit Vers, erste Zeile nix, dann erst einsteigen & \\
 		& & \\
+		\hline
 	\end{tabular}
 	
 	\vspace{1cm}
 	
-	\begin{tabular}{clc}
-		\rowcolor{cyan} \myRow{5} & \myRow{Was für ein Gott} & \myRow{(78) 80} \\
+	\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+		\rowcolor{cyan} \myRow{4} & \myRow{Was für ein Gott}          & \myRow{(78) 80} \\
+		& Zwischenspiel vor Bridge 1x ruhig, dann einmal fett steigern & \\
 		& & \\
-		\rowcolor{cyan} \myRow{6} & \myRow{Bis ich dir gegenübersteh} & \myRow{74} \\
+		\rowcolor{cyan} \myRow{5} & \myRow{Bis ich dir gegenübersteh} & \myRow{74} \\
 		& \input{../leadsheets/bis-ich-dir-gegenubersteh} & \\
-		\rowcolor{cyan} \myRow{7} & \myRow{Endless Hallelujah} & \myRow{67} \\
+		\rowcolor{cyan} \myRow{6} & \myRow{Endless Hallelujah}        & \myRow{67} \\
 		& \input{../leadsheets/endless-hallelujah} & \\
-		\rowcolor{cyan} \myRow{8} & \myRow{Jesus Messiah} & \myRow{83} \\
-%		& \multicolumn{2}{l}{\input{../leadsheets/jesus-messiah}}\\
-		& \input{../leadsheets/jesus-messiah} & \\
-		\rowcolor{cyan} \myRow{9} & \myRow{Ehre sei dir (Be glorified)} & \myRow{70} \\
+		\rowcolor{cyan} \myRow{7} & \myRow{Betet ihn an}              & \myRow{80} \\
 		& & \\
+		& & \\
+		\hline
 	\end{tabular}
 \end{document}

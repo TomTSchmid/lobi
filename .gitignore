@@ -1,6 +1,6 @@
 # gitignore
 
-! setlists/*.pdf
+# ! setlists/*.pdf
 *.pdf
 *.aux
 *.log

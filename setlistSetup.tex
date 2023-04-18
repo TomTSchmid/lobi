@@ -3,17 +3,7 @@
 \documentclass[24pt,a4paper,oneside,final,ngerman]{scrartcl}
 
 \usepackage{ngerman}            %Neue Rechtschreibung
-
-%\usepackage{fontenc}            %Verwenden von \"{o} \"{a} \"{u} {\ss}
 \usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
-\usepackage{fancyhdr}           %Kopf-und Fusszeilen
-%\usepackage{longtable}			%Lange Tabellen
-
-%\usepackage[automark]{scrlayer-scrpage}
-%\ihead{Gottesdienst}
-%\chead{XX. Monat 2023}
-%\ohead{LP-Leiter}
-%\ofoot[]{}
 
 \usepackage{ulem}
 \usepackage[dvipsnames]{xcolor}
@@ -30,114 +20,59 @@
 \usepackage{pifont}				% http://ctan.org/pkg/pifont
 \usepackage{epstopdf}
 
-%\usepackage{dirtree}
-
-%\usepackage{tikz}				%Ein umfangreiches Paket für Graphiken: Nur für Fans
-%\usetikzlibrary{positioning}
-%\usetikzlibrary{calc}
-%\usetikzlibrary{shapes.geometric}
-%\usetikzlibrary{shapes.arrows}
-%\usetikzlibrary{arrows.meta}
-%\usetikzlibrary{decorations}
-%\usetikzlibrary{decorations.pathmorphing}
-%\usetikzlibrary{decorations.text}
-%\usetikzlibrary{decorations.markings}
-%\usetikzlibrary{backgrounds}
-%\usetikzlibrary{intersections}
-%\usetikzlibrary{patterns}
-
-
 \usepackage[a4paper,
 textwidth = 16.5cm,
 textheight = 25cm,
 inner = 2.5cm]{geometry}
-
 
 \usepackage[pdftex,
 colorlinks,
 linkcolor = black,
 urlcolor = black,
 citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
-%
-%	Einstellung der Kopf- und Fußzeilen
-%
-%\pagestyle{fancyplain}
-%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-%\lhead[\fancyplain{}{\sl\thepage}]{\fancyplain{}{\sl\rightmark}}
-%\rhead[\fancyplain{}{\sl\leftmark}]{\fancyplain{}{\sl\thepage}}
-%\lfoot{}
-%\cfoot{}
-%\rfoot{}
 
-\lhead{Gottesdienst}
-\chead{XX. Monat 2023}
-\rhead{LP-Leiter}
+\renewcommand{\familydefault}{\sfdefault}
 
-\setlength{\parindent}{0cm}
-
-\newcommand{\cmark}{\ding{51}}%
-\newcommand{\xmark}{\ding{55}}%
-
-%--------------------------------------------------------------------
-%
+\newenvironment{myRow}{\color{white}\textbf}{}
 
 \title{Lobi\_Setlist}
 
-%--------------------------------------------------------------------
-
 \begin{document}
-	
-	%\pdfbookmark{Masterarbeit\_Schmid,Tom}{Masterarbeit\_Schmid,Tom}
-	%\maketitle
-	
-	%\input{einleitung}
-	
-%	Gottesdienst - XX. Monat 2023 - LP-Leiter
-	
-	\begin{tabular}{|c|l|c|}
-		\hline
-		1 & Titel & bpm \\
-		\hline
-		 & & \\
-		\hline
-		2 & Titel & bpm \\
-		\hline
-		& & \\
-		\hline
-		3 & Titel & bpm\\
-		\hline
-		& & \\
-		\hline
-		4 & Titel & bpm \\
-		\hline
-		& & \\
-		\hline
-	\end{tabular}
-	
-	\vspace{2cm}
-	
-	\begin{tabular}{|c|l|c|}
-		\hline
-		5 & Titel & bpm \\
-		\hline
-		& & \\
-		\hline
-		6 & Titel & bpm \\
-		\hline
-		& & \\
-		\hline
-		7 & Titel & bpm \\
-		\hline
-		& & \\
-		\hline
-		8 & Titel & bpm \\
-		\hline
-		& & \\
-		\hline
-		9 & Titel & bpm \\
-		\hline
-		& & \\
-		\hline
-	\end{tabular}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - XX. Monat 2023 - \textit{LP-Leiter}}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{1} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	                          & \input{../leadsheets/} &             \\
+	                          &                        &             \\
+	\rowcolor{cyan} \myRow{2} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	                          & \input{../leadsheets/} &             \\
+	                          &                        &             \\
+	\rowcolor{cyan} \myRow{3} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	                          & \input{../leadsheets/} &             \\
+	                          &                        &             \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{4} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	                          & \input{../leadsheets/} &             \\
+	                          &                        &             \\
+	\rowcolor{cyan} \myRow{5} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	                          & \input{../leadsheets/} &             \\
+	                          &                        &             \\
+	\rowcolor{cyan} \myRow{6} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	                          & \input{../leadsheets/} &             \\
+	                          &                        &             \\
+	\rowcolor{cyan} \myRow{7} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	                          & \input{../leadsheets/} &             \\
+	                          &                        &             \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+\end{tabular}
 \end{document}

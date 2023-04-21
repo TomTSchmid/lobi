@@ -1,0 +1,80 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+\usepackage[a4paper,
+textwidth = 16.5cm,
+textheight = 25cm,
+inner = 2.5cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 23. April 2023 - John}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{1} & \myRow{O Gott dir sei Ehre der Großes getan}            & \myRow{105} \\
+	                          & \input{../leadsheets/o-gott-dir-sei-ehre.tex}           &             \\
+	                          &                                                         &             \\
+	\rowcolor{cyan} \myRow{2} & \myRow{Freut euch in dem Herrn}                         & \myRow{138} \\
+	%   & \input{../leadsheets/freut-euch-in-dem-herrn.tex} &             \\
+	                          & direkter Übergang in (3):                               &             \\
+	                          & Ende erst mal normal, dann aber nächstes Lied einzählen &             \\
+	                          &                                                         &             \\
+	\rowcolor{cyan} \myRow{3} & \myRow{I Give You Glory}                                & \myRow{140} \\
+	%   & \input{../leadsheets/i-give-you-glory.tex}        &             \\
+	                          &                                                         &             \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{4} & \myRow{Der Herr ist meine Rettung}                   & \myRow{69} \\
+	                          & \input{../leadsheets/der-herr-ist-meine-rettung.tex} &            \\
+	                          &                                                      &            \\
+	\rowcolor{cyan} \myRow{5} & \myRow{10k Reasons}                                  & \myRow{72} \\
+	%   & \input{../leadsheets/10k-reasons.tex}                &            \\
+	                          & vor Vers 3 Chorus ein zweites Mal, aber Instrumental              \\
+	                          & Ende Chorus 2x, zweites Mal etwas runter bringen (?)              \\
+	                          &                                                      &            \\
+	\rowcolor{cyan} \myRow{6} & \myRow{God So Loved}                                 & \myRow{70} \\
+	                          & \input{../leadsheets/god-so-loved.tex}               &            \\
+	                          &                                                      &            \\
+	% \rowcolor{cyan} \myRow{7} & \myRow{\textit{Song}}  & \myRow{BPM} \\
+	%                           & \input{../leadsheets/} &             \\
+	%                           &                        &             \\
+	\hline
+\end{tabular}
+
+\end{document}

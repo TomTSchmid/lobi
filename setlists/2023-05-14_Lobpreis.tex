@@ -1,0 +1,79 @@
+% setlist setup
+
+\documentclass[12pt, a4paper, oneside, final, ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+\usepackage[a4paper,
+textwidth = 16.5cm,
+textheight = 25cm,
+inner = 2.5cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 14. Mai 2023 - Muttertag - Kris}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{1} & \myRow{Betet den König an}                   & \myRow{122} \\
+	                          & \input{../leadsheets/betet-den-konig-an.tex} &             \\
+	                          &                                              &             \\
+	\rowcolor{cyan} \myRow{2} & \myRow{Du regierst die Welt}                 & \myRow{142} \\
+	%   & \input{../leadsheets/}               &             \\
+	                          &                                              &             \\
+	\rowcolor{cyan} \myRow{3} & \myRow{Every Step}                           & \myRow{104} \\
+	                          & \input{../leadsheets/every-step.tex}         &             \\
+	                          &                                              &             \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{4} & \myRow{God the Uncreated One}                   & \myRow{66} \\
+	                          & \input{../leadsheets/god-the-uncreated-one.tex} &            \\
+	                          &                                                 &            \\
+	\rowcolor{cyan} \myRow{5} & \myRow{Lobe den Herren}                         & \myRow{95} \\
+	%   & \input{../leadsheets/}                        &            \\
+	                          &                                                 &            \\
+	\rowcolor{cyan} \myRow{6} & \myRow{Niemand als du Herr}                     & \myRow{-}  \\
+	%   & \input{../leadsheets/}                        &            \\
+	                          &                                                 &            \\
+	\rowcolor{cyan} \myRow{7} & \myRow{In Ewigkeit O Herr (Ich bete dich an)}   & \myRow{-}  \\
+	%   & \input{../leadsheets/}                        &            \\
+	                          &                                                 &            \\
+	\rowcolor{cyan} \myRow{7} & \myRow{Christ is Enough}                        & \myRow{82} \\
+	                          & \input{../leadsheets/christ-is-enough.tex}      &            \\
+	                          &                                                 &            \\
+	\hline
+\end{tabular}
+
+\end{document}

@@ -1,0 +1,89 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+\usepackage[a4paper,
+textwidth = 16.5cm,
+textheight = 25cm,
+inner = 2.5cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 28. Mai 2023 - John}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{1} & \myRow{O Gott dir sei Ehre der Großes getan}  & \myRow{105} \\
+	                          & \input{../leadsheets/o-gott-dir-sei-ehre.tex} &             \\
+	                          &                                               &             \\
+	\rowcolor{cyan} \myRow{2} & \myRow{Great Things}                          & \myRow{102} \\
+	                          & \input{../leadsheets/great-things.tex}        &             \\
+	                          &                                               &             \\
+	% \hline
+\end{tabular}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{3} & \myRow{Keiner ist größer}                    & \myRow{125} \\
+	                          & \input{../leadsheets/keiner-ist-grosser.tex} &             \\
+	                          &                                              &             \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{4} & \myRow{Du allein bist Gott (aus dem Staub)}       & \myRow{BPM} \\
+	                          & \input{../leadsheets/du-allein-bist-gott.tex}     &             \\
+	                          &                                                   &             \\
+	\rowcolor{cyan} \myRow{5} & \myRow{Bleibend ist deine Treu}                   & \myRow{75}  \\
+	                          & \input{../leadsheets/bleibend-ist-deine-treu.tex} &             \\
+	                          &                                                   &             \\
+	\rowcolor{cyan} \myRow{6} & \myRow{Dir gebührt die Ehre}                      & \myRow{60}  \\
+	                          & \input{../leadsheets/die-gebuhrt-die-ehre.tex}    &             \\
+	                          &                                                   &             \\
+	\rowcolor{cyan} \myRow{7} & \myRow{What a Beautiful Name}                     & \myRow{68}  \\
+	                          & \input{../leadsheets/what-a-beautiful-name.tex}   &             \\
+	                          &                                                   &             \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{8} & \myRow{Every Step}                   & \myRow{104} \\
+	                          & \input{../leadsheets/every-step.tex} &             \\
+	                          &                                      &             \\
+	\hline
+\end{tabular}
+
+\end{document}

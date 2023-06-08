@@ -1,0 +1,81 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+\usepackage[a4paper,
+textwidth = 16.5cm,
+textheight = 25cm,
+inner = 2.5cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 11. Juni 2023 - Joe}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{1} & \myRow{Betet den König an}                     & \myRow{120} \\
+	                          & \input{../leadsheets/betet-den-konig-an.tex}   &             \\
+	                          &                                                &             \\
+	\rowcolor{cyan} \myRow{2} & \myRow{Befiel du deine Wege}                   & \myRow{120} \\
+	                          & \input{../leadsheets/befiel-du-deine-wege.tex} &             \\
+	                          &                                                &             \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{3} & \myRow{In dem Kreuz liegt die Kraft}                        & \myRow{68} \\
+	                          & \input{../leadsheets/in-dem-kreuz-liegt-die-kraft.tex}      &            \\
+	                          &                                                             &            \\
+	\rowcolor{cyan} \myRow{4} & \myRow{Christ Our Hope In Life And Death}                   & \myRow{76} \\
+	                          & \input{../leadsheets/christ-our-hope-in-life-and-death.tex} &            \\
+	                          &                                                             &            \\
+	\rowcolor{cyan} \myRow{5} & \myRow{Ancient of days (Herr aller Zeiten)}                 & \myRow{80} \\
+	                          & \input{../leadsheets/herr-aller-zeiten.tex}                 &            \\
+	                          &                                                             &            \\
+	\rowcolor{cyan} \myRow{6} & \myRow{Bleibend ist deine Treu}                             & \myRow{75} \\
+	                          & \input{../leadsheets/bleibend-ist-deine-treu.tex}           &            \\
+	                          &                                                             &            \\
+	\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{p{0.6cm}p{12cm}p{1.4cm}}
+	\rowcolor{cyan} \myRow{7} & \myRow{Steh mir vor Augen}                   & \myRow{86} \\
+	                          & \input{../leadsheets/steh-mir-vor-augen.tex} &            \\
+	                          &                                              &            \\
+\end{tabular}
+
+\end{document}

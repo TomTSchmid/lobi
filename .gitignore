@@ -1,7 +1,7 @@
 # gitignore
 
 *.pdf
-!setlists/2023-09-17_Lobpreis.pdf
+!setlists/2023-09-24_Lobpreis.pdf
 # git rm -r --cached setlists
 *.aux
 *.log

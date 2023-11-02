@@ -1,0 +1,76 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+% \usepackage[a4paper,
+\usepackage[paperheight=70cm,
+paperwidth=18cm,
+textwidth = 16.5cm]{geometry}
+% textwidth = 16.5cm,
+% textheight = 25cm,
+% inner = 2.5cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\newcounter{songnumber}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*{\viertel}{$\frac{1}{4}$}
+\newcommand*{\achtel}{$\frac{1}{8}$}
+\newcommand*{\sechzehntel}{$\frac{1}{16}$}
+
+\newcommand*{\pfeil}{$\rightarrow$}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 05. November 2023 - Rebekka}
+
+\input{../leadsheets/mein-retter-erloser.tex}
+\input{../leadsheets/neues-leben.tex}
+\input{../leadsheets/amazing-grace-my-chains-are-gone.tex}
+
+\hrule
+\vspace{1cm}
+% \newpage
+
+\input{../leadsheets/in-christus-ist.tex}
+\input{../leadsheets/turn-your-eyes-upon-jesus.tex}
+\input{../leadsheets/christus-halt-mich-fest.tex}
+\input{../leadsheets/mutig-komm-ich-vor-den-thron.tex}
+
+\hrule
+\vspace{1cm}
+% \newpage
+
+\input{../leadsheets/wenn-der-konig-wiederkehrt.tex}
+
+\hrule
+
+\end{document}

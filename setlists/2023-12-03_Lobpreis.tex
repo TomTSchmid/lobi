@@ -1,0 +1,66 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+\usepackage[a4paper,
+textwidth = 16.5cm,
+textheight = 25cm,
+inner = 2.5cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\newcounter{songnumber}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*{\viertel}{$\frac{1}{4}$}
+\newcommand*{\achtel}{$\frac{1}{8}$}
+\newcommand*{\sechzehntel}{$\frac{1}{16}$}
+
+\newcommand*{\pfeil}{$\rightarrow$}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 03. Dezember 2023 - John}
+
+\input{../leadsheets/jesus-ist-kommen.tex}
+\input{../leadsheets/lobpreis-und-ehre.tex}
+\input{../leadsheets/freue-dich-welt-dein-konig-naht.tex}
+
+\hrule
+\vspace{1cm}
+
+\input{../leadsheets/konig.tex}
+\input{../leadsheets/what-a-beautiful-name.tex}
+\input{../leadsheets/der-name-jesus.tex}
+\input{../leadsheets/here-i-am-to-worship.tex}
+
+\hrule
+
+\end{document}

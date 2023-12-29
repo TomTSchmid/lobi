@@ -1,0 +1,77 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+% \usepackage[a4paper,
+% textwidth = 16.5cm,
+% textheight = 25cm,
+% inner = 2.5cm]{geometry}
+
+\usepackage[paperheight = 65cm,
+            paperwidth  = 18cm,
+            textwidth   = 16.5cm,
+            textheight  = 61cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\newcounter{songnumber}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*{\viertel}{$\frac{1}{4}$}
+\newcommand*{\achtel}{$\frac{1}{8}$}
+\newcommand*{\sechzehntel}{$\frac{1}{16}$}
+
+\newcommand*{\pfeil}{$\rightarrow$}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 31. Dezember 2023 - Joe}
+
+\input{../leadsheets/du-allein-bist-gott.tex}
+\input{../leadsheets/dir-gehort-die-herrschaft.tex}
+\input{../leadsheets/das-glaube-ich.tex}
+
+\hrule
+\vspace{1cm}
+
+\input{../leadsheets/christus-halt-mich-fest.tex}
+\input{../leadsheets/christ-our-hope-in-life-and-death.tex}
+\input{../leadsheets/lobe-den-herren.tex}
+\input{../leadsheets/turn-your-eyes-upon-jesus.tex}
+
+
+\hrule
+\vspace{1cm}
+
+\input{../leadsheets/der-herr-ist-meine-rettung.tex}
+
+\hrule
+
+\end{document}

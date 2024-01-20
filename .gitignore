@@ -2,6 +2,7 @@
 
 *.pdf
 !setlists/2024-01-21_Lobpreis.pdf
+!setlists/2024-01-20_Lounge20.pdf
 # !setlists/2023-12-31_FamilyTime.pdf
 # git rm -r --cached setlists
 *.aux

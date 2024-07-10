@@ -1,0 +1,87 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+% \usepackage[a4paper,
+% textwidth = 16.5cm,
+% textheight = 25cm,
+% inner = 2.5cm]{geometry}
+
+\usepackage[paperheight = 55cm,
+            paperwidth  = 18cm,
+            textwidth   = 16.5cm,
+            textheight  = 51cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\newcounter{songnumber}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*{\viertel}{$\frac{1}{4}$}
+\newcommand*{\achtel}{$\frac{1}{8}$}
+\newcommand*{\sechzehntel}{$\frac{1}{16}$}
+
+\newcommand*{\pfeil}{$\rightarrow$}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+
+
+\newenvironment{intro}{\rowcolor{green}\textbf{Intro}}{}
+\newenvironment{verse1}{\rowcolor{cyan}\textbf{Vers 1}}{}
+\newenvironment{verse2}{\rowcolor{cyan}\textbf{Vers 2}}{}
+\newenvironment{verse3}{\rowcolor{cyan}\textbf{Vers 3}}{}
+\newenvironment{verse4}{\rowcolor{cyan}\textbf{Vers 4}}{}
+\newenvironment{chorus}{\rowcolor{magenta}\textbf{Chorus}}{}
+\newenvironment{bridge}{\rowcolor{orange}\textbf{Bridge}}{}
+\newenvironment{zw}{\rowcolor{yellow}\textbf{ZW}}{}
+
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Gottesdienst - 14. Juli 2024 - John}
+
+\input{../leadsheets/great-things.tex}
+\input{../leadsheets/herr-du-bist-gut.tex}
+\input{../leadsheets/singt-unserm-gott.tex}
+
+\hrule
+\vspace{1cm}
+
+\input{../leadsheets/opfer-der-anbetung.tex}
+\input{../leadsheets/thank-you-jesus-for-the-blood.tex}
+\input{../leadsheets/gotteslamm.tex}
+\input{../leadsheets/der-einzige.tex}
+
+\hrule
+\vspace{1cm}
+
+\input{../leadsheets/bleibend-ist-deine-treu.tex}
+
+\hrule
+
+\end{document}

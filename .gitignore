@@ -4,7 +4,7 @@
 !setlists/2025-04-20-Lobpreis.pdf
 # !setlists/2024-04-28_Lobpreisabend.pdf
 # !setlists/2025-03-22_Lounge.pdf
-# !setlists/2025-02-19_FamilyTime.pdf
+!setlists/2025-05-08-FamilyTime.pdf
 # !setlists/2024-09-28_BCT.pdf
 # git rm -r --cached setlists
 *.aux

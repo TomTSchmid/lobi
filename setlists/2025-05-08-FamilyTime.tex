@@ -1,0 +1,65 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+% \usepackage[a4paper,
+% textwidth = 16.5cm,
+% textheight = 25cm,
+% inner = 2.5cm]{geometry}
+
+\usepackage[paperheight = 55cm,
+            paperwidth  = 18cm,
+            textwidth   = 16.5cm,
+            textheight  = 51cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\newcounter{songnumber}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*{\viertel}{$\frac{1}{4}$}
+\newcommand*{\achtel}{$\frac{1}{8}$}
+\newcommand*{\sechzehntel}{$\frac{1}{16}$}
+
+\newcommand*{\pfeil}{$\rightarrow$}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+\newenvironment{practice}{\color{red}\textbf}{}
+\newenvironment{highlight}{\color{magenta}}{\color{\black}}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Family Time - 08. Mai 2025 - Lukas}
+
+\input{../leadsheets/for-who-you-are.tex}
+\input{../leadsheets/gott-mein-fels.tex}
+\input{../leadsheets/jesus-herr-ich-denke-an-dein-opfer.tex}
+
+\hrule
+
+\end{document}

@@ -1,0 +1,69 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+% \usepackage[a4paper,
+% textwidth = 16.5cm,
+% textheight = 25cm,
+% inner = 2.5cm]{geometry}
+
+\usepackage[paperheight = 85cm,
+            paperwidth  = 18cm,
+            textwidth   = 16.5cm,
+            textheight  = 81cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\newcounter{songnumber}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*{\viertel}{$\frac{1}{4}$}
+\newcommand*{\achtel}{$\frac{1}{8}$}
+\newcommand*{\sechzehntel}{$\frac{1}{16}$}
+
+\newcommand*{\pfeil}{$\rightarrow$}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+\newenvironment{practice}{\color{red}\textbf}{}
+\newenvironment{highlight}{\color{magenta}}{\color{\black}}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{Open-Air Gottesdienst - 06. September 2025 - Lyssi}
+
+\input{../leadsheets/in-christus-ist.tex}
+\input{../leadsheets/neues-leben.tex}
+\input{../leadsheets/o-gott-dir-sei-ehre.tex}
+\input{../leadsheets/jesus-gott-in-person.tex}
+\input{../leadsheets/golgatha.tex}
+\input{../leadsheets/keiner-ist-grosser.tex}
+\input{../leadsheets/herr-aller-zeiten.tex}
+
+\hrule
+
+\end{document}

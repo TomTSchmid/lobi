@@ -7,6 +7,7 @@
 # !setlists/2025-07-10-FamilyTime.pdf
 # !setlists/2024-09-28_BCT.pdf
 !setlists/2025-09-06-OpenAir.pdf
+!setlists/2026-01-10-HochzeitMichaElena.pdf
 # git rm -r --cached setlists
 *.aux
 *.log

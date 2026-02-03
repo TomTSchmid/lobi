@@ -1,0 +1,85 @@
+% setlist setup
+
+\documentclass[12pt,a4paper,oneside,final,ngerman]{scrartcl}
+
+\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}		%Verwenden von \"{o} \"{a} \"{u} {\ss}
+
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listliketab}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=xml}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{pifont}				% http://ctan.org/pkg/pifont
+\usepackage{epstopdf}
+
+% \usepackage[a4paper,
+% textwidth = 16.5cm,
+% textheight = 25cm,
+% inner = 2.5cm]{geometry}
+
+\usepackage[paperheight = 55cm,
+            paperwidth  = 18cm,
+            textwidth   = 16.5cm,
+            textheight  = 51cm]{geometry}
+
+\usepackage[pdftex,
+colorlinks,
+linkcolor = black,
+urlcolor = black,
+citecolor = black]{hyperref}	%Verlinkungen im pdf-Dokument
+
+\newcounter{songnumber}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*{\viertel}{$\frac{1}{4}$}
+\newcommand*{\achtel}{$\frac{1}{8}$}
+\newcommand*{\sechzehntel}{$\frac{1}{16}$}
+
+\newcommand*{\pfeil}{$\rightarrow$}
+
+\newenvironment{myRow}{\color{white}\textbf}{}
+\newenvironment{practice}{\color{red}\textbf}{}
+\newenvironment{highlight}{\color{magenta}}{\color{\black}}
+
+\title{Lobi\_Setlist}
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{KFP - 16. - 18. Februar 2026 - Micha Prinz}
+
+\input{../leadsheets/jesus-ist-licht.tex}
+\input{../leadsheets/fur-gott-ist-nichts-zu-gross.tex}
+\input{../leadsheets/jesus-nur-er.tex}
+\input{../leadsheets/vorwarts.tex}
+\input{../leadsheets/singt-fur-ihn.tex}
+\input{../leadsheets/auf-die-socken.tex}
+
+\hrule
+\vspace{1cm}
+
+\input{../leadsheets/konig-des-dschungels.tex}
+\input{../leadsheets/elefant-lied.tex}
+\input{../leadsheets/supderduperspitzenklasse.tex}
+
+\hrule
+\vspace{1cm}
+
+\input{../leadsheets/jesus-du-bist-konig.tex}
+\input{../leadsheets/wahrer-konig.tex}
+\input{../leadsheets/nichts-auf-dieser-welt-ist-so-wertvoll.tex}
+\input{../leadsheets/herr-deine-liebe.tex}
+\input{../leadsheets/so-sehr-hat-gott-die-welt-geliebt.tex}
+\input{../leadsheets/neu-neu-neu-ist-jeden-morgen-deine-liebe.tex}
+
+\hrule
+
+\end{document}

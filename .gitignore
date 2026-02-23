@@ -1,7 +1,7 @@
 # gitignore
 
 *.pdf
-!setlists/2026-02-01-Lobpreis.pdf
+!setlists/2026-03-01-Lobpreis.pdf
 # !setlists/2024-04-28_Lobpreisabend.pdf
 # !setlists/2025-06-28-Lounge.pdf
 # !setlists/2025-07-10-FamilyTime.pdf
@@ -9,7 +9,7 @@
 # !setlists/2025-09-06-OpenAir.pdf
 # !setlists/2026-01-10-HochzeitMichaElena.pdf
 # !setlists/2026-01-11-Jumiko.pdf
-!setlists/2026-02-16-KFP.pdf
+# !setlists/2026-02-16-KFP.pdf
 # git rm -r --cached setlists
 *.aux
 *.log

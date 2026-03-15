@@ -10,6 +10,7 @@
 # !setlists/2026-01-10-HochzeitMichaElena.pdf
 # !setlists/2026-01-11-Jumiko.pdf
 # !setlists/2026-02-16-KFP.pdf
+!setlists/2026-03-15-Kids-LP.pdf
 # git rm -r --cached setlists
 *.aux
 *.log
